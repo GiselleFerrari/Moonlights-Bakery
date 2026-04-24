@@ -26,6 +26,26 @@
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
+            position: relative;
+        }
+
+        .container .reserva-box div {
+            flex: 1;            
+        }
+
+        .container .reserva-box div h2 {
+            color: var(--color-principal);
+            margin-bottom: 20px;
+            font-family: var(--fuente-titulo);
+        }
+
+        .container .reserva-box .image {
+            flex: 1;
+            text-align: center;
+        } 
+
+        .container .reserva-box .image img {
+            max-width: 200px;
         }
 
         /* --- Header y Navegación --- */
@@ -170,6 +190,11 @@
             color: white;
             text-align: center;
             padding: 40px 0;
+        }
+
+        footer .container p {
+            margin: 10px 0;
+            font-size: 0.8rem;
         }
 
         /* --- RESPONSIVE (CELULARES) --- */
