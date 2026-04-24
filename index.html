@@ -12,88 +12,96 @@
 <body>
 
     <header>
-        <div class="container">
-            <img src="Imagenes/Logo/PNG/Logo.png" alt="Moonlight's Bakery Logo" class="logo">
-            <br>
-            <div class="slogan-banner">“¡Dulzura artesanal en cada bocado!”</div>
+        <div class="container" style="position: relative;">
+            <div class="logo-container">
+                <img src="Imagenes/Logo/PNG/Logo.png" alt="Moonlight's Bakery">
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <nav>
-                <ul>
-                    <li><a href="#productos">Nuestras Creaciones</a></li>   
-                    <li><a href="#pedidos">Cómo Pedir</a></li>
+                <ul id="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#pedidos">Pedidos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero container">
+    <div class="slogan-bar">¡Dulzura artesanal en cada bocado!</div>
+
+    <section id="inicio" class="container hero">
         <div class="hero-text">
-            <h1>Bienvenidos a Moonlight's Bakery</h1>
-            <p>Donde la magia de la pastelería artesanal cobra vida. Cada uno de nuestros postres es elaborado con amor, dedicación y los mejores ingredientes para brindarte una experiencia única.</p>
+            <h1>Hecho con amor, <br>para compartir.</h1>
+            <p>En Moonlight's Bakery creamos momentos inolvidables a través de la pastelería artesanal. Calidad, diseño y sabor en cada detalle.</p>
         </div>
-        <div class="hero-image">
-            <img src="Imagenes/Stickers/PNG/Batiendo.png" alt="Zorrito repostero batiendo">
+        <div class="hero-img">
+            <img src="Imagenes/Stickers/PNG/Amasando.png" alt="Zorrito cocinando">
         </div>
     </section>
 
-    <section id="productos" class="productos container">
-        <h2>Nuestras Especialidades</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="Imagenes/Tortas/Floral.jpeg" alt="Torta de Chocolate y Frutillas">
-                <div class="producto-info">
-                    <h3>Tortas Personalizadas</h3>
-                    <p>Diseños únicos para tus festejos. Desde clásicos hasta creaciones modernas.</p>
+    <section id="productos" class="container productos">
+        <h2>Nuestras Tentaciones</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="Imagenes/Tortas/Floral.jpeg" alt="Torta personalizada">
+                <div class="card-body">
+                    <h3>Tortas Únicas</h3>
+                    <p>Diseños personalizados para tus eventos más especiales.</p>
                 </div>
             </div>
-            <div class="producto-card">
+            <div class="card">
                 <img src="Imagenes/Tortas/Lemon Pie.jpeg" alt="Lemon Pie">
-                <div class="producto-info">
+                <div class="card-body">
                     <h3>Lemon Pie</h3>
-                    <p>El equilibrio perfecto entre el ácido del limón y la dulzura del merengue.</p>
+                    <p>El clásico favorito con nuestro toque artesanal.</p>
                 </div>
             </div>
-            <div class="producto-card">
-                <img src="Imagenes/Tortas/Cheesecake frutos rojos.jpeg" alt="Cheesecake de Frutos Rojos">
-                <div class="producto-info">
-                    <h3>Cheesecake y más</h3>
-                    <p>Deliciosos cheesecakes, tartas frutales y una variedad de postres irresistibles.</p>
+            <div class="card">
+                <img src="Imagenes/Tortas/Cheesecake frutos rojos.jpeg" alt="Cheesecake">
+                <div class="card-body">
+                    <h3>Tartas Frutales</h3>
+                    <p>Frescura y sabor en cada porción.</p>
                 </div>
             </div>
-            <div class="producto-card">
-                <img src="Imagenes/Cupcakes/Mocca.jpeg" alt="Cupcakes Decorados">
-                <div class="producto-info">
+            <div class="card">
+                <img src="Imagenes/Cupcakes/Mocca.jpeg" alt="Muffins">
+                <div class="card-body">
                     <h3>Cupcakes & Muffins</h3>
-                    <p>Decorados y rellenos, perfectos para un antojo o mesa dulce.</p>
+                    <p>Pequeños bocados de pura felicidad decorados.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="pedidos" class="container">
-        <div class="info-reserva">
-            <div class="info-text">
-                <h3>Información para tu Pedido</h3>
-                <ul class="info-list">
-                    <li><span class="icon">📅</span> 7 Días de Anticipación para pedidos personalizados.</li>
-                    <li><span class="icon">💰</span> 50% de Seña para Reservar tu fecha.</li>
-                    <li><span class="icon">💬</span> ¡Escríbenos por DM en Instagram para consultar!</li>
-                    <li><span class="icon">📍</span> Envíos a Domicilio en Capital Federal, GBA y más.</li>
-                </ul>
+        <div class="reserva-box">
+            <div style="flex: 1;">
+                <h2 style="color: var(--color-principal); margin-bottom: 20px; font-family: var(--fuente-titulo);">¿Cómo hacer tu pedido?</h2>
+                <div class="reserva-item"><span>📅</span> 7 días de anticipación</div>
+                <div class="reserva-item"><span>💰</span> 50% de seña para reservar</div>
+                <div class="reserva-item"><span>🚚</span> Envíos en CABA y GBA</div>
+                <div class="reserva-item"><span>✉️</span> ¡Escribinos por DM!</div>
             </div>
-            <div class="info-zorrito">
-                <img src="Imagenes/Stickers/PNG/Libro de cocina.png" alt="Zorrito leyendo receta">
+            <div style="flex: 1; text-align: center;">
+                <img src="Imagenes/Stickers/PNG/Libro de cocina.png" alt="Zorrito receta" style="max-width: 200px;">
             </div>
         </div>
     </section>
 
     <footer id="contacto">
         <div class="container">
-            <div class="redes-sociales">
-                <a href="https://instagram.com/moonlights.bakery"  class="social-media-icon"><i class="bi bi-instagram"></i > @moonlights.bakery</a>
-                <a href="mailto:moonlightsbakery@gmail.com" class="social-media-icon"><i class="bi bi-envelope-at"></i> Moonlight's Bakery</a>
-            </div>
-            <p>&copy; 2020 Moonlight's Bakery. Todos los derechos reservados.</p>
+            <p href="https://instagram.com/moonlights.bakery" class="social-media-icon"><i class="bi bi-instagram"></i> @moonlights.bakery</p>
+            <br>
+            <p href="mailto:moonlightsbakery@gmail.com" class="social-media-icon"><i class="bi bi-envelope-at"></i> Moonlight's Bakery</p>
+            <br>
+            <p style="margin: 10px 0; font-size: 0.8rem;"><strong>&copy;  Moonlight's Bakery - Dulzura Artesanal</strong></p>
         </div>
     </footer>
 
